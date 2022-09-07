@@ -13,3 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+fetch('http://locahost:3000/toys')
+.then(res => res.json())
+.then(data => console.log(data))
